@@ -1,0 +1,264 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="teamcss/page_myhome/teamproCSS.css" />
+
+    <!-- <link
+      rel="stylesheet"
+      type="text/css"
+      href="teamcss/teamTopNav.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="teamcss/page_myhome/styleSlider.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="teamjs/page_myhome/Sliderjs/jquery-easing-1.3.pack.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="teamjs/page_myhome/Sliderjs/jquery-easing-compatibility.1.2.pack.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="teamjs/page_myhome/Sliderjs/coda-slider.1.1.1.pack.js"
+    ></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+
+    <!-- <script type="text/javascript">
+      var theInt = null;
+      var $crosslink, $navthumb;
+      var curclicked = 0;
+
+      theInterval = function (cur) {
+        clearInterval(theInt);
+
+        if (typeof cur != "undefined") curclicked = cur;
+
+        $crosslink.removeClass("active-thumb");
+        $navthumb.eq(curclicked).parent().addClass("active-thumb");
+        $(".stripNav ul li a").eq(curclicked).trigger("click");
+
+        theInt = setInterval(function () {
+          $crosslink.removeClass("active-thumb");
+          $navthumb.eq(curclicked).parent().addClass("active-thumb");
+          $(".stripNav ul li a").eq(curclicked).trigger("click");
+          curclicked++;
+          if (4 == curclicked) curclicked = 0;
+        }, 3000);
+      };
+
+    </script> -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"
+    />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> -->
+    <title>Document</title>
+  </head>
+  <body>
+        <!-- <header>
+        <div id="h_wrap">
+            <div class="h_div"></div>
+            <div class="h_div">
+              <h1>자취해보자</h1>
+            </div>
+            <div class="h_div">
+              <ul style="margin: 25px 30px 0 0;">
+                <img src="img/top/top_nav.png" />
+
+              </ul>
+              <div class="serch">
+              </div>
+            </div>
+          
+        </div>
+        <div id="nav_hr">
+          <nav role="navigation" class="primary-navigation">
+            <ul id="m_line">
+              <li><span>홈</span></li>
+              <li><a href="teampro_ver_01_1.html"><span>스토어</span></a>
+                <ul class="dropdown">
+                  <li><a href="#">홈</a></li>
+                  <li><a href="#">카테고리</a></li>
+                  <li><a href="#">베스트</a></li>
+                  <li><a href="#">특가</a></li>
+                </ul>
+              </li id="sec_menu">
+              <li><a href="teampro_myhome.html"><span>마이홈</span></a>
+                <ul class="dropdown">
+                  <li><a href="#">홈</a></li>
+                  <li><a href="#">내방자랑</a></li>
+                  <li><a href="#">내집자랑</a></li>
+                  <li><a href="#">전문가집들이</a></li>
+                </ul>
+              </li>
+              <li><span>자취에대한 모든것</span>
+                <ul class="dropdown">
+                  <li><a href="#">홈</a></li>
+                  <li><a href="#">자취생TIP</a></li>
+                  <li><a href="#">자취생Q&A</a></li>
+                  <li><a href="#">혼밥레시피</a></li>
+                </ul>
+              </li>
+              <li><span>고객센터</span>
+                <ul class="dropdown">
+                  <li><a href="#">질문과답변</a></li>
+                  <li><a href="#">공지사항</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        </header> -->
+        
+     <div id="m_wrap">
+        <main>
+          <form name="a" method="POST" action="TeamJoinAction.jsp">
+            <table height="1250" align="center">
+              <tr>
+                <td colspan="2" align="center">
+                  <h1>회원가입</h1><br>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" align="center">
+                  <h3>일반 회원</h3>
+                </td>
+              </tr>
+              <tr>
+                <td>아이디 :</td>
+                <td> <input type="text" name="ID" size="20"> <input type="button" name="IDcheck" value="중복확인"> </td>
+              </tr>
+              <tr>
+                <td>비밀번호 :</td>
+                <td> <input type="password" name="PW" size="20"> </td>
+              </tr>
+              <tr>
+                <td>비밀번호 확인 :</td>
+                <td> <input type="password" name="PWCH" size="20"> </td>
+              </tr>
+              <tr>
+                <td>이름 : </td>
+                <td> <input type="text" name="NAME" size="20"> </td>
+              </tr>
+              <tr>
+                <td>닉네임 :</td>
+                <td> <input type="text" name="N_NAME" size="20"> <input type="button" name="Ncheck" value="중복확인"></td>
+              </tr>
+              <tr>
+                <td>생년월일 :</td>
+                <td> 
+                  <input type="text" name="YEAR" size="4">년
+                  <input type="text" name="MONTH" size="4">월
+                  <input type="text" name="DAY" size="4">일
+                  <input type="radio" name="ra1" value="양력" checked>양력
+                  <input type="radio" name="ra1" value="음력" >음력
+                </td>
+              </tr>
+              <tr>
+                <td rowspan="3">주소 : </td>
+                <td> <input type="text" name="BUN" size="8"> <input type="button" name="ADDR_SER" value="주소찾기"> </td>
+              </tr>
+              <tr>
+                <td> <input type="text" name="ADDR"  size="48"> </td>
+              </tr>
+              <tr>
+                <td> <input type="text" name="Sec_ADDR"  size="48"> </td>
+              </tr>
+              <tr>
+                <td>휴대폰 : </td>
+                <td> <select name="NUM_SEL" size="1">
+                    <option value="010">010</option>
+                    <option value="011">011</option>
+                    <option value="016">016</option>
+                    <option value="017">017</option>
+                    <option value="018">018</option>
+                  </select> - <input type="text" name="SEC_NUM" size="5"> - <input type="text" name="THI_NUM"  size="5"> </td>
+              </tr>
+              <tr>
+                <td>SMS수신 :</td>
+                <td>
+                  <input type="radio" name="phoneagree" checked value="동의">수신동의
+                  <input type="radio" name="phoneagree" value="미동의" checked>미동의
+                </td>
+              </tr>
+              <tr>
+                <td>이메일 :</td>
+                <td><input type="text" name="MAIL"/>@ <input type="text" name="mailAddr"/> 
+                  <select name="MAIL_ADDR">
+                    <option>직접입력</option>
+                    <option>naver.com</option>
+                    <option>hanmail.net</option>
+                    <option>gmail.com</option>
+                  </select></td>               
+              </tr>
+              <tr>
+                <td>메일수신 :</td>
+                <td>
+                  <input type="radio" name="mailagree" value="Agree">수신동의
+                  <input type="radio" name="mailagree" value="Disagree" checked>미동의
+                </td>
+              </tr>
+              <tr>
+                <td>관심분야 :</td>     
+                <td> 
+                  <input type="checkbox" name="interested" value="솔로">솔로
+                  <input type="checkbox" name="interested" value="커플">커플
+                  <input type="checkbox" name="interested" value="자취">자취
+                  <input type="checkbox" name="interested" value="인테리어">인테리어
+                  <input type="checkbox" name="interested" value="요리">요리 <br>
+                  <input type="checkbox" name="interested" value="여행">여행
+                  <input type="checkbox" name="interested" value="이사">이사
+                  <input type="checkbox" name="interested" value="룸메이트">룸메이트
+                  <input type="checkbox" name="interested" value="꿀팁">꿀팁
+                  <input type="checkbox" name="interested" value="반려동물">반려동물
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+              <tr>
+              
+              </tr>
+              <tr>
+                <td colspan="2"></td>
+              </tr>
+              <tr>
+                <td colspan="2" align="right">이용약관에 동의하십니까?
+                  <input type="radio" name="agree01" value="동의"> 동의함 
+                  <input type="radio" name="agree01" value="미동의" checked> 동의 안함
+                </td>
+              </tr>
+
+              </tr>
+              <tr>
+                <td colspan="2"> </td>
+              </tr>
+              <tr>
+                <td colspan="2" align="right">이용약관에 동의하십니까?
+                  <input type="radio" name="agree02" value="동의"> 동의함 
+                  <input type="radio" name="agree02" value="미동의" checked > 동의 안함
+                </td>
+              </tr>
+          
+              <tr>
+                <td colspan="2" align="center">
+                   <input type="submit" name="SUBMIT" value="회원가입"> 
+                   <input type="button" name="CANCEL" value="나가기"> </td>
+              </tr>
+            </table>
+          </form>
+         </main>
+          </div>
+          <footer>
+            <div></div>
+          </footer>       
+  </body>
+</html>
